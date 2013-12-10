@@ -1,4 +1,6 @@
-﻿function getStats(currData) {
+﻿debugger
+function getStats(currData) {
+   
     currData = currData || {};
     $.get('/stats/totals', function(data) {
         var section = $('section.aggstats');
@@ -11,7 +13,7 @@
         section.show();
     });
 
-    setTimeout(function () { getStats(currData); }, 30000);
+    setTimeout(function () { getStats(currData); }, 10000);
 }
 
 function update(data, currData, key) {

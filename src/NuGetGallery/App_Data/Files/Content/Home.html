@@ -1,3 +1,7 @@
+<script src="~/Scripts/stats.js">
+</script>
+
+
 <section class="featured">
     <div>
         <h1>What is NuGet?</h1>
@@ -7,7 +11,7 @@
     <img src="/Content/Logos/hero.png" alt="Manage NuGet Packages Dialog Window" /> 
 </section> 
 
-<section class="aggstats">
+<section class="aggstats" onload=" getStats({})">
     <span class="stat">
         <span id="UniquePackages" class="num"></span> unique packages
     </span>
@@ -44,3 +48,5 @@
      title="Creating and submitting a package">how to create and publish a package</a>.
    If you don't plan on submitting a package, there's no need to register.</p>
 
+
+    
