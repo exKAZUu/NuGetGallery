@@ -1,5 +1,4 @@
-﻿debugger
-function getStats(currData) {
+﻿function getStats(currData) {
    
     currData = currData || {};
     $.get('/stats/totals', function(data) {
@@ -13,7 +12,7 @@ function getStats(currData) {
         section.show();
     });
 
-    setTimeout(function () { getStats(currData); }, 10000);
+    setTimeout(function () { getStats(currData); }, 120000);
 }
 
 function update(data, currData, key) {

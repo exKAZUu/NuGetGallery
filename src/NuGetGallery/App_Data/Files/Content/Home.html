@@ -1,5 +1,4 @@
-<script src="~/Scripts/stats.js">
-</script>
+
 
 
 <section class="featured">
@@ -11,7 +10,7 @@
     <img src="/Content/Logos/hero.png" alt="Manage NuGet Packages Dialog Window" /> 
 </section> 
 
-<section class="aggstats" onload=" getStats({})">
+<section class="aggstats">
     <span class="stat">
         <span id="UniquePackages" class="num"></span> unique packages
     </span>
@@ -28,7 +27,7 @@
 </section>
 
 <section class="release">
-    <h2>Developer Environment</h2>
+    <h2>Developer Environment</h2> 
     <p>This is a developer environment! 
         If you want to show a custom message here, either change the App_Data\Files\Content\Home.html file, 
         or if you are using the AzureStorageBlob package store type, upload a Home.md or Home.html to the "content" 
@@ -49,4 +48,9 @@
    If you don't plan on submitting a package, there's no need to register.</p>
 
 
-    
+<script src="/Scripts/stats.js">
+</script>
+<script>
+    $(getStats);
+</script>
+
